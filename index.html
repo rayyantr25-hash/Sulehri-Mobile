@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sulehri Mobiles | Trusted Mobile Store in Karachi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Saira+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="3.3 2.9"/><circle cx="12" cy="12" r="3.2" fill="#fafaf8"/></svg>sulehri <b>mobiles</b></a>
+    <button class="nav-cart" id="navCart" aria-label="Cart" onclick="location.href='cart.html'"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg><span class="cart-badge" id="cartBadge">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</nav>
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-orbit menu-orbit-one"></div><div class="menu-orbit menu-orbit-two"></div>
+  <button class="menu-close" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <div class="menu-inner">
+    <div class="menu-topline"><span class="menu-brand">SULEHRI <b>MOBILES</b></span><span class="menu-status"><i></i> YOUR PREMIUM PHONE STORE</span></div>
+    <div class="menu-heading"><span>EXPLORE</span><p>Find your next<br><em>iPhone.</em></p></div>
+    <nav class="menu-nav" aria-label="Main navigation">
+      <a href="index.html" style="--i:1"><small>01</small><span>Home</span><b>↗</b></a>
+      <a href="products.html" style="--i:2"><small>02</small><span>Products</span><b>↗</b></a>
+      <a href="cart.html" style="--i:3"><small>03</small><span>Your Cart</span><b>↗</b></a>
+    </nav>
+    <div class="menu-bottom">
+      <div><span class="menu-caption">VISIT OUR STORE</span><p>Shop B8, Saima Drive-In Mobile Mall<br>Johar Mor, Gulshan-e-Iqbal, Karachi</p></div>
+      <a class="menu-contact" href="https://wa.me/923102806901" target="_blank" rel="noopener"><span>Chat on WhatsApp</span><b>↗</b></a>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div>
+    <h1><span class="line l1"><span>Premium iPhones,</span></span><span class="line l2"><span>at Johar Mor.</span></span></h1>
+    <p class="hero-sub">From the iPhone 11 at Rs 35,000 to the 18 Pro Max. Visit Shop B8, Saima Drive-In Mobile Mall, or order on WhatsApp.</p>
+    <div class="hero-actions">
+      <a href="products.html" class="btn btn-primary">Browse iPhones</a>
+      <a href="https://wa.me/923102806901" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div id="scene" role="img" aria-label="Rotating 3D gears inside a phone outline, the Sulehri Mobiles logo"></div>
+</header>
+
+<section class="info-strip reveal">
+  <div class="info-item"><strong>Location</strong><p>Shop B8, Saima Drive-In Mall, Johar Mor, Gulshan-e-Iqbal</p></div>
+  <div class="info-item"><strong>Hours</strong><p>Open until 12 AM, every day</p></div>
+  <div class="info-item"><strong>Call</strong><p>0310 2806901</p></div>
+</section>
+
+<section class="featured">
+  <h2>iPhone lineup</h2>
+  <p class="sec-sub">Current stock with storage, colour and price. New and used phones, accessories and repairs are also available in store.</p>
+  <div class="product-grid" id="featuredGrid"></div>
+  <a href="products.html" class="btn btn-whatsapp see-all">Filter by price</a>
+</section>
+
+<section class="map-section">
+  <h2>Find us</h2>
+  <div class="map-wrap"><iframe title="Sulehri Mobiles on Google Maps" src="https://www.google.com/maps?q=Saima%20Drive%20In%20Mobile%20Mall%20Shop%20B8%20Johar%20Mor%20Block%2010-A%20Gulshan-e-Iqbal%20Karachi&output=embed" width="100%" height="320" style="border:0" allowfullscreen loading="lazy"></iframe></div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">sulehri <b>mobiles</b></div>
+    <p>Shop B8, Saima Drive-In Mobile Mall, Johar Mor, Block 10-A, Gulshan-e-Iqbal, Karachi</p>
+    <p>0310 2806901 · Open until 12 AM daily</p>
+    <a href="https://wa.me/923102806901" class="btn btn-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+  <div class="footer-bottom">Demo built by Rayyan.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="script.js"></script>
+<script src="fx.js"></script>
+<script src="detail.js"></script>
+</body>
+</html>
